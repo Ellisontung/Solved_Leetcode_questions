@@ -1,2 +1,2 @@
 # Solved_Leetcode_questions
-Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub](https://github.com/QasimWani/LeetHub)
+In this file, I uploaded all the self-solved leetcode questins.
