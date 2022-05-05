@@ -1,5 +1,8 @@
 class Solution {
 public:
+    //Sliding windows problems
+    //two pointers move with the same directions and do not overtake each other.
+    //Time complexity: O(n)
     int lengthOfLongestSubstring(string s) {
         vector<int> map(128,0);
         int counter=0, begin=0, end=0, d=0; 
