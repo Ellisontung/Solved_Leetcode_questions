@@ -11,15 +11,16 @@ public:
         int k = find_k(nums);
         int l,r,m;
         if(k==0){
-            return bs(nums,k,nums.size()-1,target);
+            l = 0;
+            r = nums.size()-1;
+        }else if(target >= nums[0] && target<= nums[k-1]){
+            l = 0;
+            r = k-1;
         }else{
-            int first = bs(nums,0,k-1,target);
-            int second = bs(nums,k,nums.size()-1,target);
-            if(first==-1&&second==-1)
-                return -1;
-            else if(first!=-1) return first;
-            else return second;
+            l = k;
+            r = nums.size()-1;
         }
+        return bs(nums,l,r,target);
     }
     
     int bs(vector<int>&nums,int l,int r,int target){
