@@ -8,6 +8,7 @@ public:
         }
         for(int i = 0 ; i < nums.size() ; i++){
             if(mp[target-nums[i]]!=0){
+//                 hash.find(mp[target-nums[i]])!=hash.end()
                 if(i==mp[target-nums[i]]){
                     continue;
                 }
